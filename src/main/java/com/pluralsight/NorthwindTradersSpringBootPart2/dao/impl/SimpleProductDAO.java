@@ -1,7 +1,7 @@
-package com.example.NorthwindTradersSpringBootPart2.dao.impl;
+package com.pluralsight.NorthwindTradersSpringBootPart2.dao.impl;
 
-import com.example.NorthwindTradersSpringBootPart2.dao.interfaces.IProductDAO;
-import com.example.NorthwindTradersSpringBootPart2.models.Product;
+import com.pluralsight.NorthwindTradersSpringBootPart2.dao.interfaces.IProductDAO;
+import com.pluralsight.NorthwindTradersSpringBootPart2.models.Product;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -13,9 +13,9 @@ public class SimpleProductDAO implements IProductDAO {
 
     public SimpleProductDAO() {
         this.products = new ArrayList<>();
-        products.add(new Product("Apple", 1, 6));
-        products.add(new Product("Banana", 2, 5));
-        products.add(new Product("Orange", 3, 4));
+        products.add(new Product(1,"Apple", 1, 6));
+        products.add(new Product(2,"Banana", 2, 5));
+        products.add(new Product(3,"Orange", 3, 4));
     }
 
     @Override

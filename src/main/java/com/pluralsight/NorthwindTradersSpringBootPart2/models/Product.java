@@ -1,4 +1,4 @@
-package com.example.NorthwindTradersSpringBootPart2.models;
+package com.pluralsight.NorthwindTradersSpringBootPart2.models;
 
 public class Product {
     private int productId;

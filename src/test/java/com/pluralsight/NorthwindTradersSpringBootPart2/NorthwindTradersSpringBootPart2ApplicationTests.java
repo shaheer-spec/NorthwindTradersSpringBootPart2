@@ -1,4 +1,4 @@
-package com.example.NorthwindTradersSpringBootPart2;
+package com.pluralsight.NorthwindTradersSpringBootPart2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

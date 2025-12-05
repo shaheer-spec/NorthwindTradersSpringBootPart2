@@ -1,6 +1,6 @@
-package com.example.NorthwindTradersSpringBootPart2.dao.interfaces;
+package com.pluralsight.NorthwindTradersSpringBootPart2.dao.interfaces;
 
-import com.example.NorthwindTradersSpringBootPart2.models.Product;
+import com.pluralsight.NorthwindTradersSpringBootPart2.models.Product;
 
 import java.util.List;
 

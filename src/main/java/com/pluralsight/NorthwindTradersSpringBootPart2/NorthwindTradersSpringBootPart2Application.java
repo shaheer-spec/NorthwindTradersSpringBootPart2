@@ -1,7 +1,7 @@
-package com.example.NorthwindTradersSpringBootPart2;
+package com.pluralsight.NorthwindTradersSpringBootPart2;
 
-import com.example.NorthwindTradersSpringBootPart2.models.Product;
-import com.example.NorthwindTradersSpringBootPart2.services.ProductService;
+import com.pluralsight.NorthwindTradersSpringBootPart2.models.Product;
+import com.pluralsight.NorthwindTradersSpringBootPart2.services.ProductService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +17,6 @@ public class NorthwindTradersSpringBootPart2Application {
 
         ProductService productService = context.getBean(ProductService.class);
         Scanner scanner = new Scanner(System.in);
-
 
         while (true){
             System.out.println("========== Ledger Application ==========");
@@ -37,7 +36,10 @@ public class NorthwindTradersSpringBootPart2Application {
                 case 3 -> updateNewProduct(scanner, productService);
                 case 4 -> deleteProduct(scanner, productService);
                 case 5 -> searchProduct(scanner, productService);
-                case 0 -> System.out.println("exiting the program");
+                case 0 -> {
+                    System.out.println("exiting the program");
+                    return;
+                }
                 default -> System.out.println("Wrong input, try again.");
 
             }
